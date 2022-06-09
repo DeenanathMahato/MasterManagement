@@ -15,8 +15,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * The Class SwaggerConfig.
  */
-@Configuration
-@EnableSwagger2
+//@Configuration
+//@EnableSwagger2
 public class SwaggerConfig {
 
 	/** The application name. */
@@ -28,7 +28,7 @@ public class SwaggerConfig {
 	 *
 	 * @return the docket
 	 */
-	@Bean
+//	@Bean
 	public Docket postsApi() {
 		return new Docket(DocumentationType.SWAGGER_2).groupName("public-api").apiInfo(apiInfo()).select()
 				.paths(PathSelectors.any()).build();

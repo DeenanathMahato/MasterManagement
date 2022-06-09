@@ -5,6 +5,9 @@ spring:
     name: master-management-service
   profiles:
     active: local
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
   jmx:
     enabled: false
   data:
